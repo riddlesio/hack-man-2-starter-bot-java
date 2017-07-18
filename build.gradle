@@ -17,7 +17,7 @@ sourceSets {
 
 jar {
     manifest {
-        attributes 'Implementation-Title': 'Riddles.io Hack-man 2 Starterbot',
+        attributes 'Implementation-Title': 'Riddles.io Ms. Hack-man Starterbot',
                 'Implementation-Version': version,
                 'Main-Class': mainClassName
     }
