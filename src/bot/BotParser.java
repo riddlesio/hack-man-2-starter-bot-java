@@ -181,7 +181,7 @@ public class BotParser {
 
         try {
             switch(key) {
-                case "has_weapon":
+                case "bombs":
                     player.setBombs(Integer.parseInt(value));
                     break;
                 case "snippets":
