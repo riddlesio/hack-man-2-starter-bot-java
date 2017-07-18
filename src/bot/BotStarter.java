@@ -24,6 +24,7 @@ import java.util.Random;
 
 import move.Move;
 import move.MoveType;
+import player.CharacterType;
 import player.Player;
 
 /**
@@ -40,6 +41,15 @@ public class BotStarter {
 
     private BotStarter() {
         this.random = new Random();
+    }
+
+    /**
+     * Return a random character to play as
+     * @return A random character
+     */
+    public CharacterType getCharacter() {
+        CharacterType[] characters = CharacterType.values();
+        return characters[this.random.nextInt(characters.length)];
     }
 
     /**

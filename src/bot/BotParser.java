@@ -26,7 +26,7 @@ import move.MoveType;
 import player.Player;
 
 /**
- * bot.BotParser - Created on 15-6-17
+ * bot.BotParser
  *
  * Class that will keep reading output from the engine.
  * Will either update the bot state or get actions.
@@ -70,7 +70,9 @@ public class BotParser {
                     }
                     break;
                 case "action":
-                    if (parts[1].equals("move")) {
+                    if (parts[1].equals("character")) {  // return character
+                        System.out.println(this.bot.getCharacter().toString());
+                    } else if (parts[1].equals("move")) {  // return move
                         Move move = this.bot.doMove(this.currentState);
                         if (move != null) {
                             System.out.println(move.toString());

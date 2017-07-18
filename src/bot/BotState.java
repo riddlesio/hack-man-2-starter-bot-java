@@ -25,7 +25,7 @@ import field.Field;
 import player.Player;
 
 /**
- * bot.BotState - Created on 15-6-17
+ * bot.BotState
  *
  * [description]
  *
